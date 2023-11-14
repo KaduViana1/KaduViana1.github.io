@@ -1,260 +1,277 @@
 ---
-import AboutInfos from "./AboutInfos.astro";
+
 ---
 
-<div class="background">
-  <div class="back-shapes text-center overflow-x-hidden px-4 md:px-0">
-    <span
-      class="icon js"
-      style="top:66.59856996935649%;left:13.020833333333334%;animation-delay:-0.9s;"
-    ></span>
-    <span
-      class="icon astro"
-      style="top:55.59856996935649%;left:20.020833333333334%;animation-delay:-3.9s;"
-    ></span>
-    <span
-      class="icon vue"
-      style="top:31.46067415730337%;left:33.59375%;animation-delay:-4.8s;"
-    ></span>
-    <span
-      class="icon ts"
-      style="top:76.50663942798774%;left:38.020833333333336%;animation-delay:-4s;"
-    ></span>
-    <span
-      class="icon react"
-      style="top:21.450459652706844%;left:14.0625%;animation-delay:-2.8s;"
-    ></span>
-    <span
-      class="icon docker"
-      style="top:58.12053115423902%;left:56.770833333333336%;animation-delay:-2.15s;"
-    ></span>
-    <span
-      class="icon css"
-      style="top:8.682328907048008%;left:75.70833333333333%;animation-delay:-1.9s;"
-    ></span>
-    <span
-      class="icon next"
-      style="top:31.3585291113381%;left:58.541666666666664%;animation-delay:-0.65s;"
-    ></span>
-    <span
-      class="icon ts"
-      style="top:69.96935648621042%;left:81.45833333333333%;animation-delay:-0.4s;"
-    ></span>
-    <span
-      class="icon js"
-      style="top:15.117466802860061%;left:32.34375%;animation-delay:-4.1s;"
-    ></span>
-    <span
-      class="icon node"
-      style="top:13.074565883554648%;left:45.989583333333336%;animation-delay:-3.65s;"
-    ></span>
-    <span
-      class="icon html"
-      style="top:55.87334014300306%;left:27.135416666666668%;animation-delay:-2.25s;"
-    ></span>
-    <span
-      class="icon nuxt"
-      style="top:49.54034729315628%;left:53.75%;animation-delay:-2s;"></span>
-    <span
-      class="icon mongo"
-      style="top:34.62717058222676%;left:49.635416666666664%;animation-delay:-1.55s;"
-    ></span>
-    <span
-      class="icon docker"
-      style="top:33.19713993871297%;left:86.14583333333333%;animation-delay:-0.95s;"
-    ></span>
-    <span
-      class="icon css"
-      style="top:28.19203268641471%;left:25.208333333333332%;animation-delay:-4.45s;"
-    ></span>
-    <span
-      class="icon mongo"
-      style="top:39.7344228804903%;left:10.833333333333334%;animation-delay:-3.35s;"
-    ></span>
-    <span
-      class="icon git"
-      style="top:75.83452502553627%;left:24.427083333333332%;animation-delay:-2.3s;"
-    ></span>
-    <span
-      class="icon sql"
-      style="top:2.860061287027579%;left:50.864583333333336%;animation-delay:-1.75s;"
-    ></span>
-    <span
-      class="icon nuxt"
-      style="top:71.3993871297242%;left:68.45833333333333%;animation-delay:-1.25s;"
-    ></span>
-    <span
-      class="icon redux"
-      style="top:31.256384065372828%;left:76.92708333333333%;animation-delay:-0.65s;"
-    ></span>
-    <span
-      class="icon react"
-      style="top:46.47599591419816%;left:38.90625%;animation-delay:-0.35s;"
-    ></span>
-    <span
-      class="icon git"
-      style="top:3.4729315628192032%;left:19.635416666666668%;animation-delay:-4.3s;"
-    ></span>
-    <span
-      class="icon sass"
-      style="top:3.575076608784474%;left:6.25%;animation-delay:-4.05s;"></span>
-    <span
-      class="icon tailwind"
-      style="top:77.3237997957099%;left:4.583333333333333%;animation-delay:-3.75s;"
-    ></span>
-    <span
-      class="icon sql"
-      style="top:0.9193054136874361%;left:71.14583333333333%;animation-delay:-3.3s;"
-    ></span>
-    <span
-      class="icon redux"
-      style="top:23.6976506639428%;left:63.28125%;animation-delay:-2.1s;"
-    ></span>
-    <span
-      class="icon next"
-      style="top:75.30745658835546%;left:45.15625%;animation-delay:-1.75s;"
-    ></span>
-    <span
-      class="icon node"
-      style="top:60.9805924412666%;left:42.239583333333336%;animation-delay:-1.45s;"
-    ></span>
-    <span
-      class="icon vue"
-      style="top:29.009193054136876%;left:91.90625%;animation-delay:-1.05s;"
-    ></span>
-    <span
-      class="icon sass"
-      style="top:52.093973442288046%;left:68.90625%;animation-delay:-0.7s;"
-    ></span>
-    <span
-      class="icon tailwind"
-      style="top:76.51174668028601%;left:85.59375%;animation-delay:-0.35s;"
-    ></span>
-    <span
-      class="icon astro"
-      style="top:60.51174668028601%;left:90.59375%;animation-delay:-2.35s;"
-    ></span>
-    <span
-      class="icon react"
-      style="top:11.542390194075587%;left:91.51041666666667%;animation-delay:-0.1s;"
-    ></span>
+<div class="w-full min-h-screen flex overflow-hidden">
+  <div
+    class="about-info m-auto overflow-hidden w-0 h-0 bg-black/[0.5] border-gold relative rounded-lg grid grid-cols-3"
+  >
+    <img
+      class="hidden-content absolute opacity-0 rounded-full w-24 h-24 border-[3px] border-gold -top-12 left-[50%] translate-x-[-50%]"
+      src="./profile.jpg"
+      alt="eu"
+    />
+    <div
+      class="hidden-content opacity-0 border-r-[3px] my-8 border-gold flex flex-col gap-6 pl-14 pt-8"
+    >
+      <h2 class="hidden-content opacity-0 text-3xl font-bold">Tecnologias:</h2>
+      <ul class="hidden-content opacity-0 grid grid-cols-2 text-lg gap-y-5">
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img class="w-8 h-8 mr-2" src="/icons/html.png" alt="HTML icon" />
+            <span>HTML</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img class="w-8 h-8 mr-2" src="/icons/css.png" alt="CSS icon" />
+            <span>CSS</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img class="w-8 h-8 mr-2" src="/icons/js.png" alt="JS icon" />
+            <span>Javascript</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img class="w-8 h-8 mr-2" src="/icons/ts.png" alt="TS icon" />
+            <span>Typescript</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img class="w-8 h-8 mr-2" src="/icons/node.png" alt="Node icon" />
+            <span>Node.js</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img
+              class="w-8 h-8 mr-2"
+              src="/icons/express.png"
+              alt="Express icon"
+            />
+            <span>Express</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img class="w-8 h-8 mr-2" src="/icons/sass.png" alt="SASS icon" />
+            <span>SASS</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img
+              class="w-8 h-8 mr-2"
+              src="/icons/tailwind.png"
+              alt="Tailwind icon"
+            />
+            <span>Tailwind</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img class="w-8 h-8 mr-2" src="/icons/react.png" alt="React icon" />
+            <span>React</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img class="w-8 h-8 mr-2" src="/icons/redux.png" alt="Redux icon" />
+            <span>Redux</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img class="w-8 h-8 mr-2" src="/icons/nextjs.png" alt="Next icon" />
+            <span>Next</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img class="w-8 h-8 mr-2" src="/icons/vue.png" alt="Vue icon" />
+            <span>Vue</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img class="w-8 h-8 mr-2" src="/icons/nuxt.png" alt="Nuxt icon" />
+            <span>Nuxt</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img class="w-8 h-8 mr-2" src="/icons/astro.png" alt="Astro icon" />
+            <span>Astro</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img class="w-8 h-8 mr-2" src="/icons/mysql.png" alt="Mysql icon" />
+            <span>MySQL</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img
+              class="w-8 h-8 mr-2"
+              src="/icons/mongodb.png"
+              alt="MongoDB icon"
+            />
+            <span>MongoDB</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img class="w-8 h-8 mr-2" src="/icons/git.png" alt="Git icon" />
+            <span>Git</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-center items-center max-w-fit">
+            <img
+              class="w-8 h-8 mr-2"
+              src="/icons/docker.png"
+              alt="Docker icon"
+            />
+            <span>Docker</span>
+          </div>
+        </li>
+      </ul>
+    </div>
 
-    <di class="w-full h-full flex justify-center relative items-center">
-      <AboutInfos />
-    </di>
+    <div class="my-14 flex flex-col gap-6 px-4 pt-12">
+      <p class="hidden-content opacity-0 text-lg">
+        Amante da tecnologia e fascinado com a programação de aplicações, sou um
+        desenvolvedor Full-Stack focado principalmente no ecossistema da área de
+        desenvolvimento web, mas também com habilidades em desenvolvimento
+        mobile. Mais familiarizado com React, Vue e Express, estou sempre em
+        busca de aprender novas tecnologias e assim ter as habilidades
+        necessárias para resolver cada problema e realizar cada projeto da
+        maneira mais eficiente possível.
+      </p>
+    </div>
+    <div
+      class="hidden-content opacity-0 border-l-[3px] my-8 border-gold flex flex-col gap-6 px-5 pt-8"
+    >
+      <h2 class="hidden-content opacity-0 text-3xl font-bold">
+        Sobre / Contato:
+      </h2>
+      <ul class="flex flex-col items-start text-lg gap-y-3">
+        <li>
+          <strong class="text-xl">Nome:</strong> Carlos Eduardo Viana
+        </li>
+        <li>
+          <strong class="text-xl">Idade:</strong> 27
+        </li>
+        <li>
+          <p><strong class="text-xl">De:</strong> Pernambuco, Brasil</p>
+        </li>
+        <li>
+          <p>
+            <strong class="text-xl">Email:</strong> kaduviana.dev@outlook.com
+          </p>
+        </li>
+        <li>
+          <strong class="text-xl">Certificado:</strong>
+          <a
+            class="underline underline-offset-2 ml-2"
+            href="https://e-certificado.com/login/visualizar?c=1843282A5FD56C1F12188270"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Desenvolvedor Full-Stack
+          </a>
+        </li>
+        <li>
+          <strong class="text-xl">Linkedin:</strong>
+          <a
+            class="underline underline-offset-2 ml-2"
+            href="https://www.linkedin.com/in/kaduvianadev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >kaduvianadev<img
+              class="w-6 h-6 rounded-sm inline-block ml-2 bg-white"
+              src="/icons/linkedin.png"
+              alt="linkedin icon"
+            />
+          </a>
+        </li>
+        <li>
+          <strong class="text-xl">Github:</strong>
+          <a
+            class="underline underline-offset-2 ml-2"
+            href="https://github.com/KaduViana1"
+            target="_blank"
+            rel="noopener noreferrer"
+            >KaduViana1<img
+              class="w-7 h-7 bg-white rounded-full inline-block ml-2"
+              src="/icons/github.png"
+              alt="linkedin icon"
+            />
+          </a>
+        </li>
+        <li>
+          <strong class="text-xl">Instagram:</strong>
+          <a
+            class="underline underline-offset-2 ml-2"
+            href="https://www.instagram.com/kaduv96/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >@kaduv96<img
+              class="w-6 h-6 rounded-sm inline-block ml-2"
+              src="/icons/instagram.png"
+              alt="linkedin icon"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-
-  <style>
-    .background {
-      background: rgb(24, 24, 27);
-      background-size: 100% 100%;
-      height: 100vh;
-    }
-
-    .back-shapes {
-      width: 100%;
-      height: 100%;
-      position: relative;
-    }
-
-    .icon {
-      position: absolute;
-      animation-name: icon;
-      -webkit-animation-name: icon;
-      animation-duration: 5s;
-      -webkit-animation-duration: 5s;
-      animation-iteration-count: infinite;
-      -webkit-animation-iteration-count: infinite;
-      display: inline-block;
-      width: 2.8rem;
-      height: 2.8rem;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-
-    .js {
-      background-image: url(/icons/js.png);
-    }
-    .react {
-      background-image: url(/icons/react.png);
-    }
-    .ts {
-      background-image: url(/icons/typescript.png);
-    }
-    .vue {
-      background-image: url(/icons/vue.png);
-    }
-    .next {
-      background-image: url(/icons/nextjs.png);
-    }
-    .docker {
-      background-image: url(/icons/docker.png);
-    }
-    .css {
-      background-image: url(/icons/css.png);
-    }
-    .html {
-      background-image: url(/icons/html.png);
-    }
-    .node {
-      background-image: url(/icons/node.png);
-    }
-    .mongo {
-      background-image: url(/icons/mongodb.png);
-      width: 60px;
-      height: 60px;
-    }
-    .git {
-      background-image: url(/icons/git.png);
-      width: 50px;
-      height: 50px;
-    }
-    .sql {
-      background-image: url(/icons/mysql.png);
-      width: 50px;
-      height: 50px;
-    }
-    .nuxt {
-      background-image: url(/icons/nuxt.png);
-    }
-    .redux {
-      background-image: url(/icons/redux.png);
-    }
-    .sass {
-      background-image: url(/icons/sass.png);
-    }
-    .tailwind {
-      background-image: url(/icons/tailwind.png);
-    }
-    .astro {
-      background-image: url(/icons/astro.png);
-      width: 3.5rem;
-      height: 3.5rem;
-    }
-
-    @keyframes icon {
-      0% {
-        transform: translateY(0%) rotate(-55deg);
-      }
-      50% {
-        transform: translateY(300%) rotate(55deg);
-      }
-      100% {
-        transform: translateY(0%) rotate(-55deg);
-      }
-    }
-
-    @-webkit-keyframes icon {
-      0% {
-        -webkit-transform: translateY(0%);
-      }
-      50% {
-        -webkit-transform: translateY(300%);
-      }
-      100% {
-        -webkit-transform: translateY(0%);
-      }
-    }
-  </style>
 </div>
+
+<style>
+  .about-info {
+    animation: expand 2s forwards;
+  }
+
+  .hidden-content {
+    animation: showContent 1s 1s forwards;
+  }
+
+  @keyframes expand {
+    0% {
+      width: 0;
+      height: 0;
+      border-width: 2px;
+    }
+    30% {
+      border-width: 2px;
+      height: 0;
+      width: 1200px;
+    }
+    70% {
+      border-width: 2px;
+      width: 1200px;
+      height: 650px;
+    }
+    100% {
+      overflow: visible;
+      border-width: 2px;
+      width: 1200px;
+      height: 700px;
+    }
+  }
+
+  @keyframes showContent {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+</style>

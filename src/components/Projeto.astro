@@ -1,0 +1,101 @@
+---
+import { Image } from "astro:assets";
+
+type Props = {
+  projectInfo: {
+    nome: string;
+    imagens: string[];
+    links: {
+      deploy?: string;
+      "github-front"?: string;
+      "github-back"?: string;
+      docker?: string;
+    };
+    libs: string[];
+    EN: string;
+    PT: string;
+  };
+};
+
+const { projectInfo } = Astro.props;
+
+const description = projectInfo.PT.split(". ");
+---
+
+<div
+  class="min-h-fit flex bg-black/[0.5] shadow-xl shadow-black border-silver border-2 rounded-lg overflow-hidden"
+>
+  <img
+    class="w-1/4 min-w-[25%] border-r-2 border-silver"
+    src={projectInfo.imagens[0]}
+    alt=""
+  />
+  <div class="flex flex-col gap-y-2 p-2 w-full text-start">
+    <div class="flex justify-between items-center w-full">
+      <h1 class="text-2xl">{projectInfo.nome}</h1>
+      <div class="flex gap-1">
+        {
+          projectInfo.libs &&
+            projectInfo.libs.map((lib) => (
+              <img
+                src={`/icons/${lib}.png`}
+                class="w-6 h-6 rounded-sm"
+                title={lib.toUpperCase()}
+              />
+            ))
+        }
+      </div>
+    </div>
+    <div>
+      {description?.map((d) => <p>{d}.</p>)}
+    </div>
+    <div class="flex gap-4 text-sm underline ml-auto mt-auto">
+      {
+        projectInfo.links.deploy && (
+          <a
+            class="hover:text-yellow-300 text-gold"
+            href={projectInfo.links.deploy}
+            target="_blank"
+          >
+            Ir para o site
+          </a>
+        )
+      }
+      {
+        projectInfo.links["github-front"] && (
+          <a
+            class="hover:text-yellow-300 text-gold"
+            href={projectInfo.links["github-front"]}
+            target="_blank"
+          >
+            Repositório front-end
+          </a>
+        )
+      }
+      {
+        projectInfo.links["github-back"] && (
+          <a
+            class="hover:text-yellow-300 text-gold"
+            href={projectInfo.links["github-back"]}
+            target="_blank"
+          >
+            Repositório back-end
+          </a>
+        )
+      }
+      {
+        projectInfo.links.docker && (
+          <a
+            class="hover:text-yellow-300 text-gold"
+            href={projectInfo.links.docker}
+            target="_blank"
+          >
+            Docker image
+          </a>
+        )
+      }
+    </div>
+  </div>
+</div>
+
+<style></style>

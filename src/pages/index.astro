@@ -1,23 +1,28 @@
 ---
-import About from '../components/About.astro';
-import Hero from '../components/Hero.astro';
-import Layout from '../layouts/Layout.astro';
-
+import About from "../components/About.astro";
+import Hero from "../components/Hero.astro";
+import IconsBackground from "../components/IconsBackground.astro";
+import Projetos from "../components/Projetos.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Kadu Portfolio">
-	<main>	
-		<section id="home" class="w-full bg-[url(/background.webp)] bg-no-repeat bg-cover bg-center bg-fixed">
-		<Hero />
-		</section>
-		<section id="about">
-		<About />
-		</section>
-		<section id="projects"></section>
-	</main>
+  <main>
+    <section
+      id="home"
+      class="w-full bg-[url(/background.webp)] bg-no-repeat bg-cover bg-center bg-fixed"
+    >
+      <Hero />
+    </section>
+    <IconsBackground>
+      <section id="about">
+        <About />
+      </section>
+      <section id="projects">
+        <Projetos />
+      </section>
+    </IconsBackground>
+  </main>
 </Layout>
 
-
-<style>
-
-</style>
+<style></style>

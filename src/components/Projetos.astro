@@ -1,0 +1,60 @@
+---
+import Projeto from "./Projeto.astro";
+import JSONprojects from "../utils/projetos.json";
+import FrontEndMentorCard from "./FrontEndMentorCard.astro";
+
+const { projects } = JSONprojects;
+---
+
+<div class="flex flex-col py-12 items-center gap-16">
+  <h1 class="text-5xl z-10">Projetos</h1>
+  <div class="container grid grid-cols-1 gap-16 z-10">
+    {projects && projects.map((project) => <Projeto projectInfo={project} />)}
+  </div>
+  <div class="container z-10">
+    <h2 class="text-4xl mb-10">Projetos do Front End Mentor</h2>
+    <p class="text-xl mb-1">
+      Esses são alguns projetos mais simples e menores tirados do site <a
+        class="text-bold underline text-gold"
+        href="https://www.frontendmentor.io/"
+        target="_blank">Frontend Mentor</a
+      >, site focado em projetos para testar e aperfeiçoar as habilidades dos
+      devs.
+    </p>
+    <span class="text-xl">
+      Eles são todos responsivos, usando a estratégia de mobile first e
+      construídos com apenas Javascript, HTML e CSS</span
+    >
+    <div class="grid grid-cols-3 gap-x-12 px-4 mt-8">
+      <FrontEndMentorCard
+        gitHubURL="https://github.com/KaduViana1/princing-component-with-toggle"
+        imageURL="pricing-component"
+      >
+        <p>
+          Um componente de preços com um botão para mudar entre tipos de planos.
+        </p>
+      </FrontEndMentorCard>
+      <FrontEndMentorCard
+        gitHubURL="https://github.com/KaduViana1/News-Homepage-Front-Mentor-"
+        imageURL="news-page"
+      >
+        <p>
+          Uma página de noticias com um simples menu de modal. Na versão mobile
+          o cabeçalho vira um icone para abrir o menu.
+        </p>
+      </FrontEndMentorCard>
+      <FrontEndMentorCard
+        gitHubURL="https://github.com/KaduViana1/calculator-app"
+        imageURL="calculator"
+      >
+        <p>
+          Uma Calculadora com três temas de cores, usando
+          "prefered-color-scheme" para definir o melhor tema para o usuário de
+          acordo com as preferencias do dispositivo ou navegador.
+        </p>
+      </FrontEndMentorCard>
+    </div>
+  </div>
+</div>
+
+<script></script>
