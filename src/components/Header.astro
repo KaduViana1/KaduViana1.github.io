@@ -2,15 +2,41 @@
 
 ---
 
-<header class="w-full py-4 border-b-2 border-white bg-[#0d0d0d]">
-  <div class="container m-auto flex gap-5 items-center">
-    <img
-      src="/logo.png"
-      class="w-12 h-12 absolute top-2 left-10"
-      alt="Logo circular com fundo preto e e letras K e V douradas."
-    />
-    <nav class="w-full text-white">
-      <ul class="flex w-full h-full justify-between items-center text-2xl">
+<header
+  class="w-full min-h-[4rem] duration-1000 overflow-hidden max-h-16 flex p-4 gap-4 border-b-2 border-white bg-[#0d0d0d] absolute Kheader"
+>
+  <img
+    src="/logo.png"
+    class="w-12 h-12 absolute top-2 left-2"
+    alt="Logo circular com fundo preto e e letras K e V douradas."
+  />
+  <button
+    class="header-button absolute right-2 top-4 h-10 md:hidden outline-none border-2 border-transparent focus:border-gold rounded-sm"
+    aria-controls="navigation"
+    aria-expanded="false"
+  >
+    <svg
+      stroke="white"
+      fill="none"
+      class="hamburger"
+      viewBox="-10 -5 120 120"
+      width="40"
+    >
+      <path
+        class="line"
+        stroke-width="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
+      >
+      </path>
+    </svg>
+  </button>
+  <div class="container m-auto flex gap-5 items-center pt-12 sm:pt-0">
+    <nav class="w-full text-white sm:flex">
+      <ul
+        class="flex flex-col sm:flex-row w-full h-full justify-around items-center text-xl md:text-2xl"
+      >
         <li>
           <a
             class="hover:text-gold focus:text-gold duration-200 outline-none header-item"
@@ -48,6 +74,28 @@
   </div>
 </header>
 
+<script>
+  const header = document.querySelector(".Kheader");
+  const headerClasses = header.classList;
+  document.querySelector(".header-button").addEventListener("click", () => {
+    headerClasses.toggle("header-open");
+  });
+
+  const button = document.querySelector(".header-button");
+
+  button.addEventListener("click", () => {
+    const currentState = button.getAttribute("data-state");
+
+    if (!currentState || currentState === "closed") {
+      button.setAttribute("data-state", "opened");
+      button.setAttribute("aria-expanded", "true");
+    } else {
+      button.setAttribute("data-state", "closed");
+      button.setAttribute("aria-expanded", "false");
+    }
+  });
+</script>
+
 <style>
   .header-item div {
     width: 0;
@@ -62,5 +110,34 @@
 
   .header-item:focus div {
     width: 100%;
+  }
+
+  .header-open {
+    max-height: 250px;
+  }
+
+  .header-button {
+    overflow: hidden;
+  }
+
+  .header-button .hamburger {
+    transition:
+      translate 1s,
+      rotate 1s;
+  }
+
+  .header-button[aria-expanded="true"] .hamburger {
+    translate: 1px -2px;
+    rotate: 0.125turn;
+  }
+
+  .header-button .line {
+    transition: 1s;
+    stroke-dasharray: 60 31 60 300;
+  }
+
+  .header-button[aria-expanded="true"] .line {
+    stroke-dasharray: 60 105 60 300;
+    stroke-dashoffset: -90;
   }
 </style>
