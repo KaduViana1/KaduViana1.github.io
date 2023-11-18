@@ -92,8 +92,8 @@
         "nextjs",
         "socketio"
       ],
-      "EN": "Real-tima chat app, layout inspired from WhatsApp web. With group and single chat messages, non-read messages notification and sorting the order of the chats on the side-bar where you can fix the conversarions to stay on top. ",
-      "PT": "Aplicativo de chat em tempo real, copiando layout do WhatsApp web com função de mensagens em grupo, mensagens para usuários individuais, notificação de mensagens não lidas, organização da ordem das conversas na barra lateral e opção de fixar conversas no topo."
+      "EN": "Real-tima chat app, layout inspired from WhatsApp web. With group and single chat messages, non-read messages notification and sorting the order of the chats on the side-bar where you can fix the conversarions to stay on top ",
+      "PT": "Aplicativo de chat em tempo real, copiando layout do WhatsApp web com função de mensagens em grupo, mensagens para usuários individuais, notificação de mensagens não lidas, organização da ordem das conversas na barra lateral e opção de fixar conversas no topo"
     }
   ]
 }

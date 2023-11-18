@@ -23,16 +23,20 @@ const description = projectInfo.PT.split(". ");
 ---
 
 <div
-  class="min-h-fit flex bg-black/[0.5] shadow-xl shadow-black border-silver border-2 rounded-lg overflow-hidden"
+  class="min-h-fit md:max-w-none m-auto flex flex-col lg:flex-row bg-black/[0.5] shadow-xl shadow-black border-silver border-2 rounded-lg overflow-hidden"
 >
   <img
-    class="w-1/4 min-w-[25%] border-r-2 border-silver"
+    class="w-full lg:w-2/5 lg:min-w-[25%] border-b-2 md:border-b-0 md:border-r-2 border-silver"
     src={projectInfo.imagens[0]}
     alt=""
   />
-  <div class="flex flex-col gap-y-2 p-2 w-full text-start">
-    <div class="flex justify-between items-center w-full">
-      <h1 class="text-2xl">{projectInfo.nome}</h1>
+  <div
+    class="flex flex-col gap-y-2 gap-x-2 pt-4 pb-1 lg:pb-0 px-2 md:p-2 w-full text-start"
+  >
+    <div
+      class="flex flex-col-reverse md:flex-row justify-between itens-center md:items-center w-full"
+    >
+      <h1 class="text-2xl self-center mt-3 lg:mt-0">{projectInfo.nome}</h1>
       <div class="flex gap-1">
         {
           projectInfo.libs &&
@@ -46,7 +50,7 @@ const description = projectInfo.PT.split(". ");
         }
       </div>
     </div>
-    <div>
+    <div class="text-center md:text-start">
       {description?.map((d) => <p>{d}.</p>)}
     </div>
     <div class="flex gap-4 text-sm underline ml-auto mt-auto">

@@ -7,8 +7,14 @@ type Props = {
 const { imageURL, gitHubURL } = Astro.props;
 ---
 
-<div class="flex flex-col gap-2 bg-black/[0.5]">
-  <img class="w-ful h-72" src={`/project_images/${imageURL}.webp`} alt="" />
+<div
+  class="flex flex-col gap-2 bg-black/[0.5] max-w-lg lg:max-w-none m-auto lg:m-0"
+>
+  <img
+    class="w-full h-60 lg:h-72"
+    src={`/project_images/${imageURL}.webp`}
+    alt=""
+  />
   <div class="flex flex-col p-2 gap-4 grow">
     <slot />
     <a
