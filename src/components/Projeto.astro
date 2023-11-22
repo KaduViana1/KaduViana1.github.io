@@ -23,7 +23,7 @@ const description = projectInfo.PT.split(". ");
 ---
 
 <div
-  class="min-h-fit md:max-w-none m-auto flex flex-col lg:flex-row bg-black/[0.5] shadow-xl shadow-black border-silver border-2 rounded-lg overflow-hidden"
+  class="projeto-animation opacity-0 min-h-fit md:max-w-none m-auto flex flex-col lg:flex-row bg-black/[0.5] shadow-xl shadow-black border-silver border-2 rounded-lg overflow-hidden"
 >
   <img
     class="w-full lg:w-2/5 lg:min-w-[25%] border-b-2 md:border-b-0 md:border-r-2 border-silver"
@@ -53,7 +53,7 @@ const description = projectInfo.PT.split(". ");
     <div class="text-center md:text-start">
       {description?.map((d) => <p>{d}.</p>)}
     </div>
-    <div class="flex gap-4 text-sm underline ml-auto mt-auto">
+    <div class="flex gap-4 text-sm underline ml-auto mt-auto text-center">
       {
         projectInfo.links.deploy && (
           <a
@@ -102,4 +102,58 @@ const description = projectInfo.PT.split(". ");
   </div>
 </div>
 
-<style></style>
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("projeto");
+        }
+      });
+    },
+    { threshold: 0.4 },
+  );
+
+  const projetos = document.querySelectorAll(".projeto-animation");
+
+  projetos.forEach((projeto) => {
+    observer.observe(projeto);
+  });
+</script>
+
+<style>
+  .projeto {
+  }
+
+  .projeto:nth-child(1n) {
+    animation: projeto1 1.5s ease-in-out forwards;
+  }
+
+  .projeto:nth-child(2n) {
+    animation: projeto2 1.5s ease-in-out forwards;
+  }
+
+  @keyframes projeto1 {
+    0% {
+      opacity: 0;
+      transform: translateX(-30%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes projeto2 {
+    0% {
+      opacity: 0;
+      transform: translateX(30%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+</style>

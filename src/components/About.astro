@@ -6,18 +6,19 @@
   <!-- Desktop -->
 
   <div
-    class="about-info m-auto overflow-hidden w-0 h-0 bg-black/[0.5] border-gold relative rounded-lg grid-cols-3 hidden lg:grid"
+    id="about-animation"
+    class="m-auto overflow-hidden w-0 h-0 bg-black/[0.5] border-gold relative rounded-lg grid-cols-3 hidden lg:grid"
   >
     <img
-      class="hidden-content absolute opacity-0 rounded-full w-24 h-24 border-[3px] border-gold -top-12 left-[50%] translate-x-[-50%] z-20"
+      class="absolute opacity-0 rounded-full w-24 h-24 border-[3px] border-gold -top-12 left-[50%] translate-x-[-50%] z-20"
       src="./profile.jpg"
       alt="eu"
     />
     <div
-      class="hidden-content opacity-0 border-r-[3px] my-8 border-gold flex flex-col gap-6 pl-7 xl:pl-14 pt-8"
+      class="opacity-0 border-r-[3px] my-8 border-gold flex flex-col gap-6 pt-8"
     >
-      <h2 class="hidden-content opacity-0 text-3xl font-bold">Tecnologias:</h2>
-      <ul class="hidden-content opacity-0 grid grid-cols-2 text-lg gap-y-5">
+      <h2 class="opacity-0 text-3xl font-bold">Tecnologias:</h2>
+      <ul class="opacity-0 grid grid-cols-2 text-lg gap-y-5 xl:pl-14">
         <li>
           <div class="flex justify-center items-center max-w-fit">
             <img class="w-8 h-8 mr-2" src="/icons/html.png" alt="HTML icon" />
@@ -146,7 +147,7 @@
     </div>
 
     <div class="my-14 flex flex-col gap-6 px-4 pt-12">
-      <p class="hidden-content opacity-0 text-lg">
+      <p class="opacity-0 text-lg">
         Amante da tecnologia e fascinado com a programação de aplicações, sou um
         desenvolvedor Full-Stack focado principalmente no ecossistema da área de
         desenvolvimento web, mas também com habilidades em desenvolvimento
@@ -157,12 +158,12 @@
       </p>
     </div>
     <div
-      class="hidden-content opacity-0 border-l-[3px] my-8 border-gold flex flex-col gap-6 px-2 xl:px-5 pt-8"
+      class="opacity-0 border-l-[3px] my-8 border-gold flex flex-col gap-6 pt-8"
     >
-      <h2 class="hidden-content opacity-0 text-3xl font-bold">
-        Sobre / Contato:
-      </h2>
-      <ul class="flex flex-col items-start lg:text-md xl:text-lg gap-y-3">
+      <h2 class="opacity-0 text-3xl font-bold">Sobre / Contato:</h2>
+      <ul
+        class="flex flex-col items-start lg:text-md xl:text-lg gap-y-3 xl:px-5"
+      >
         <li>
           <strong class="text-xl">Nome:</strong> Carlos Eduardo Viana
         </li>
@@ -235,255 +236,303 @@
 
   <!-- Mobile -->
 
-  <div
-    class="about-info-mobile hidden-content mx-auto mt-24 bg-black/[0.5] border-gold border-[3px] relative rounded-lg grid-cols-1 lg:hidden grid sm:max-w-[80%]"
-  >
+  <div class="relative mt-24 mx-auto min-w-[6rem] lg:hidden">
     <img
-      class="hidden-content absolute opacity-0 rounded-full w-24 h-24 border-[3px] border-gold -top-12 left-[50%] translate-x-[-50%]"
+      class="absolute rounded-full w-24 h-24 border-[3px] border-gold -top-12 left-[50%] translate-x-[-50%]"
       src="./profile.jpg"
       alt="eu"
     />
+    <div
+      id="about-animation-mobile"
+      class="bg-black/[0.5] border-gold border-[3px] rounded-lg grid-cols-1 grid sm:max-w-[80%]"
+    >
+      <div class="my-14 flex flex-col gap-6 px-4 pt-8">
+        <p class="text-lg">
+          Amante da tecnologia e fascinado com a programação de aplicações, sou
+          um desenvolvedor Full-Stack focado principalmente no ecossistema da
+          área de desenvolvimento web, mas também com habilidades em
+          desenvolvimento mobile. Mais familiarizado com React, Vue e Express,
+          estou sempre em busca de aprender novas tecnologias e assim ter as
+          habilidades necessárias para resolver cada problema e realizar cada
+          projeto da maneira mais eficiente possível.
+        </p>
+      </div>
 
-    <div class="my-14 flex flex-col gap-6 px-4 pt-8">
-      <p class="hidden-content opacity-0 text-lg">
-        Amante da tecnologia e fascinado com a programação de aplicações, sou um
-        desenvolvedor Full-Stack focado principalmente no ecossistema da área de
-        desenvolvimento web, mas também com habilidades em desenvolvimento
-        mobile. Mais familiarizado com React, Vue e Express, estou sempre em
-        busca de aprender novas tecnologias e assim ter as habilidades
-        necessárias para resolver cada problema e realizar cada projeto da
-        maneira mais eficiente possível.
-      </p>
-    </div>
+      <div class="bg-gold w-11/12 h-1 mx-auto"></div>
 
-    <div class="bg-gold w-11/12 h-1 mx-auto hidden-content"></div>
+      <div class="my-8 flex flex-col gap-6">
+        <h2 class="text-3xl font-bold">Tecnologias:</h2>
+        <ul
+          class="grid grid-cols-2 text-lg gap-y-5 pl-[10%] sm:pl-[15%] md:pl-[20%]"
+        >
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img class="w-8 h-8 mr-2" src="/icons/html.png" alt="HTML icon" />
+              <span>HTML</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img class="w-8 h-8 mr-2" src="/icons/css.png" alt="CSS icon" />
+              <span>CSS</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img class="w-8 h-8 mr-2" src="/icons/js.png" alt="JS icon" />
+              <span>Javascript</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img class="w-8 h-8 mr-2" src="/icons/ts.png" alt="TS icon" />
+              <span>Typescript</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img class="w-8 h-8 mr-2" src="/icons/node.png" alt="Node icon" />
+              <span>Node.js</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img
+                class="w-8 h-8 mr-2"
+                src="/icons/express.png"
+                alt="Express icon"
+              />
+              <span>Express</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img class="w-8 h-8 mr-2" src="/icons/sass.png" alt="SASS icon" />
+              <span>SASS</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img
+                class="w-8 h-8 mr-2"
+                src="/icons/tailwind.png"
+                alt="Tailwind icon"
+              />
+              <span>Tailwind</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img
+                class="w-8 h-8 mr-2"
+                src="/icons/react.png"
+                alt="React icon"
+              />
+              <span>React</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img
+                class="w-8 h-8 mr-2"
+                src="/icons/redux.png"
+                alt="Redux icon"
+              />
+              <span>Redux</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img
+                class="w-8 h-8 mr-2"
+                src="/icons/nextjs.png"
+                alt="Next icon"
+              />
+              <span>Next</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img class="w-8 h-8 mr-2" src="/icons/vue.png" alt="Vue icon" />
+              <span>Vue</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img class="w-8 h-8 mr-2" src="/icons/nuxt.png" alt="Nuxt icon" />
+              <span>Nuxt</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img
+                class="w-8 h-8 mr-2"
+                src="/icons/astro.png"
+                alt="Astro icon"
+              />
+              <span>Astro</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img
+                class="w-8 h-8 mr-2"
+                src="/icons/mysql.png"
+                alt="Mysql icon"
+              />
+              <span>MySQL</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img
+                class="w-8 h-8 mr-2"
+                src="/icons/mongodb.png"
+                alt="MongoDB icon"
+              />
+              <span>MongoDB</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img class="w-8 h-8 mr-2" src="/icons/git.png" alt="Git icon" />
+              <span>Git</span>
+            </div>
+          </li>
+          <li>
+            <div class="flex justify-center items-center max-w-fit">
+              <img
+                class="w-8 h-8 mr-2"
+                src="/icons/docker.png"
+                alt="Docker icon"
+              />
+              <span>Docker</span>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-    <div class="hidden-content opacity-0 my-8 flex flex-col gap-6">
-      <h2 class="hidden-content opacity-0 text-3xl font-bold">Tecnologias:</h2>
-      <ul
-        class="hidden-content opacity-0 grid grid-cols-2 text-lg gap-y-5 pl-[10%] sm:pl-[15%] md:pl-[20%]"
-      >
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img class="w-8 h-8 mr-2" src="/icons/html.png" alt="HTML icon" />
-            <span>HTML</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img class="w-8 h-8 mr-2" src="/icons/css.png" alt="CSS icon" />
-            <span>CSS</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img class="w-8 h-8 mr-2" src="/icons/js.png" alt="JS icon" />
-            <span>Javascript</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img class="w-8 h-8 mr-2" src="/icons/ts.png" alt="TS icon" />
-            <span>Typescript</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img class="w-8 h-8 mr-2" src="/icons/node.png" alt="Node icon" />
-            <span>Node.js</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img
-              class="w-8 h-8 mr-2"
-              src="/icons/express.png"
-              alt="Express icon"
-            />
-            <span>Express</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img class="w-8 h-8 mr-2" src="/icons/sass.png" alt="SASS icon" />
-            <span>SASS</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img
-              class="w-8 h-8 mr-2"
-              src="/icons/tailwind.png"
-              alt="Tailwind icon"
-            />
-            <span>Tailwind</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img class="w-8 h-8 mr-2" src="/icons/react.png" alt="React icon" />
-            <span>React</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img class="w-8 h-8 mr-2" src="/icons/redux.png" alt="Redux icon" />
-            <span>Redux</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img class="w-8 h-8 mr-2" src="/icons/nextjs.png" alt="Next icon" />
-            <span>Next</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img class="w-8 h-8 mr-2" src="/icons/vue.png" alt="Vue icon" />
-            <span>Vue</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img class="w-8 h-8 mr-2" src="/icons/nuxt.png" alt="Nuxt icon" />
-            <span>Nuxt</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img class="w-8 h-8 mr-2" src="/icons/astro.png" alt="Astro icon" />
-            <span>Astro</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img class="w-8 h-8 mr-2" src="/icons/mysql.png" alt="Mysql icon" />
-            <span>MySQL</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img
-              class="w-8 h-8 mr-2"
-              src="/icons/mongodb.png"
-              alt="MongoDB icon"
-            />
-            <span>MongoDB</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img class="w-8 h-8 mr-2" src="/icons/git.png" alt="Git icon" />
-            <span>Git</span>
-          </div>
-        </li>
-        <li>
-          <div class="flex justify-center items-center max-w-fit">
-            <img
-              class="w-8 h-8 mr-2"
-              src="/icons/docker.png"
-              alt="Docker icon"
-            />
-            <span>Docker</span>
-          </div>
-        </li>
-      </ul>
-    </div>
+      <div class="bg-gold w-11/12 h-1 mx-auto"></div>
 
-    <div class="bg-gold w-11/12 h-1 mx-auto hidden-content"></div>
-
-    <div class="hidden-content opacity-0 my-8 flex flex-col gap-6 px-2">
-      <h2 class="hidden-content opacity-0 text-3xl font-bold">
-        Sobre / Contato:
-      </h2>
-      <ul class="flex flex-col items-center lg:text-md xl:text-lg gap-y-3">
-        <li>
-          <strong class="text-xl">Nome:</strong> Carlos Eduardo Viana
-        </li>
-        <li>
-          <strong class="text-xl">Idade:</strong> 27
-        </li>
-        <li>
-          <p><strong class="text-xl">De:</strong> Pernambuco, Brasil</p>
-        </li>
-        <li>
-          <p>
-            <strong class="text-xl">Email:</strong> kaduviana.dev@outlook.com
-          </p>
-        </li>
-        <li>
-          <strong class="text-xl">Certificado:</strong>
-          <a
-            class="underline underline-offset-2 ml-2"
-            href="https://e-certificado.com/login/visualizar?c=1843282A5FD56C1F12188270"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Desenvolvedor Full-Stack
-          </a>
-        </li>
-        <li>
-          <strong class="text-xl">Linkedin:</strong>
-          <a
-            class="underline underline-offset-2 ml-2"
-            href="https://www.linkedin.com/in/kaduvianadev/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >kaduvianadev<img
-              class="w-6 h-6 rounded-sm inline-block ml-2 bg-white"
-              src="/icons/linkedin.png"
-              alt="linkedin icon"
-            />
-          </a>
-        </li>
-        <li>
-          <strong class="text-xl">Github:</strong>
-          <a
-            class="underline underline-offset-2 ml-2"
-            href="https://github.com/KaduViana1"
-            target="_blank"
-            rel="noopener noreferrer"
-            >KaduViana1<img
-              class="w-7 h-7 bg-white rounded-full inline-block ml-2"
-              src="/icons/github.png"
-              alt="linkedin icon"
-            />
-          </a>
-        </li>
-        <li>
-          <strong class="text-xl">Instagram:</strong>
-          <a
-            class="underline underline-offset-2 ml-2"
-            href="https://www.instagram.com/kaduv96/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >@kaduv96<img
-              class="w-6 h-6 rounded-sm inline-block ml-2"
-              src="/icons/instagram.png"
-              alt="linkedin icon"
-            />
-          </a>
-        </li>
-      </ul>
+      <div class="my-8 flex flex-col gap-6 px-2">
+        <h2 class="text-3xl font-bold">Sobre / Contato:</h2>
+        <ul class="flex flex-col items-center lg:text-md xl:text-lg gap-y-3">
+          <li>
+            <strong class="text-xl">Nome:</strong> Carlos Eduardo Viana
+          </li>
+          <li>
+            <strong class="text-xl">Idade:</strong> 27
+          </li>
+          <li>
+            <p><strong class="text-xl">De:</strong> Pernambuco, Brasil</p>
+          </li>
+          <li>
+            <p>
+              <strong class="text-xl">Email:</strong> kaduviana.dev@outlook.com
+            </p>
+          </li>
+          <li>
+            <strong class="text-xl">Certificado:</strong>
+            <a
+              class="underline underline-offset-2 ml-2"
+              href="https://e-certificado.com/login/visualizar?c=1843282A5FD56C1F12188270"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Desenvolvedor Full-Stack
+            </a>
+          </li>
+          <li>
+            <strong class="text-xl">Linkedin:</strong>
+            <a
+              class="underline underline-offset-2 ml-2"
+              href="https://www.linkedin.com/in/kaduvianadev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >kaduvianadev<img
+                class="w-6 h-6 rounded-sm inline-block ml-2 bg-white"
+                src="/icons/linkedin.png"
+                alt="linkedin icon"
+              />
+            </a>
+          </li>
+          <li>
+            <strong class="text-xl">Github:</strong>
+            <a
+              class="underline underline-offset-2 ml-2"
+              href="https://github.com/KaduViana1"
+              target="_blank"
+              rel="noopener noreferrer"
+              >KaduViana1<img
+                class="w-7 h-7 bg-white rounded-full inline-block ml-2"
+                src="/icons/github.png"
+                alt="linkedin icon"
+              />
+            </a>
+          </li>
+          <li>
+            <strong class="text-xl">Instagram:</strong>
+            <a
+              class="underline underline-offset-2 ml-2"
+              href="https://www.instagram.com/kaduv96/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@kaduv96<img
+                class="w-6 h-6 rounded-sm inline-block ml-2"
+                src="/icons/instagram.png"
+                alt="linkedin icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("about-info");
+      }
+    });
+  });
+
+  observer.observe(document.querySelector("#about-animation"));
+
+  const observerMobile = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("about-info-mobile");
+        }
+      });
+    },
+    {
+      threshold: 0,
+    },
+  );
+
+  observerMobile.observe(document.querySelector("#about-animation-mobile"));
+</script>
 
 <style>
   .about-info {
     animation: expand 2s forwards;
   }
 
-  /* .about-info-mobile {
-animation: expand 2s forwards;
-  } */
-
-  .hidden-content {
+  .about-info * {
     opacity: 0;
     animation: showContent 1s 1s forwards;
   }
 
+  .about-info-mobile {
+    animation: expand-mobile 3s ease-in-out forwards;
+  }
+
   @keyframes expand {
     0% {
+      opacity: 1;
       width: 0;
       height: 0;
       border-width: 2px;
@@ -499,6 +548,7 @@ animation: expand 2s forwards;
       height: 650px;
     }
     100% {
+      opacity: 1;
       overflow: visible;
       border-width: 2px;
       width: 1200px;
@@ -508,25 +558,27 @@ animation: expand 2s forwards;
 
   @keyframes expand-mobile {
     0% {
-      width: 0;
-      height: 0;
-      border-width: 2px;
+      overflow: hidden;
+      max-width: 0;
+      max-height: 0;
+      border-width: 0;
     }
     30% {
+      overflow: hidden;
       border-width: 2px;
-      height: 0;
-      width: 1200px;
+      max-height: 0;
+      max-width: 800px;
     }
     70% {
+      overflow: hidden;
       border-width: 2px;
-      width: 1200px;
-      height: 650px;
+      max-width: auto;
     }
     100% {
       overflow: visible;
       border-width: 2px;
-      width: 1200px;
-      height: 700px;
+      width: auto;
+      max-height: 2000px;
     }
   }
 
