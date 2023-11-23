@@ -8,7 +8,7 @@
         "github-front": "https://github.com/KaduViana1/ProjetoBatman"
       },
       "libs": ["html", "css", "js", "react", "react-router"],
-      "EN": "A React.js built application to simulate an website for advertising and selling tickets to the 2022 batman movie.The site is responsive to smaller devices and contains four pages:Home page with the movie trailer, description and main characters cards.Contact page with a simple form for contact.Photos page with a carousel from movie's photos.Comments page where you can add comments, simulationg a connection with a database.",
+      "EN": "A React.js built application to simulate an website for advertising and selling tickets to the 2022 batman movie. The site is responsive to smaller devices and contains four pages:. Home page with the movie trailer, description and main characters cards. Contact page with a simple form for contact. Photos page with a carousel from movie's photos. Comments page where you can add comments, simulationg a connection with a database",
       "PT": "Uma aplicação React.js que simula um site de divulgação e venda de ingressos para o filme do batman 2022. O site é responsivo para dispositivos menores e tem quatro páginas: A página principal com o trailer do filme, sinopse e cards com imagens dos principais personagens. Página de contato com um simples formulário para contato. Página de fotos com um carrossel de fotos do filme. Página de comentários onde você pode adicionar um comentário, simulando conexão com uma API e base de dados"
     },
     {
@@ -30,7 +30,7 @@
         "express",
         "mysql"
       ],
-      "EN": "My Clone of YouTube's desktop home-page. A clone of YouTube's homepage desktop version built with Typescript React.js using styled components and react-router-dom, with side-bar, configurations dropdown where you can toggle dark/light themes that stays saved to local storage. The application uses an API to provide user creation, user authentication and creation of 'template-videos' for the search page.On the back-end I used Node.js express with typescript, MySQL as database for users data and videos templates, uuid to generate random ids for users and videos, bycript tu encrypt users passwords, jsonwebtoken to create a token that expires in 30 days for user authentication.",
+      "EN": "My Clone of YouTube's desktop home-page. A clone of YouTube's homepage desktop version built with Typescript React.js using styled components and react-router-dom, with side-bar, configurations dropdown where you can toggle dark/light themes that stays saved to local storage. The application uses an API to provide user creation, user authentication and creation of 'template-videos' for the search page.On the back-end I used Node.js express with typescript, MySQL as database for users data and videos templates, uuid to generate random ids for users and videos, bycript tu encrypt users passwords, jsonwebtoken to create a token that expires in 30 days for user authentication",
       "PT": "Um clone da versão para desktops da pagina inicial do youtube, feita com React.js com Typescript, usando styled components e react-router-dom, contendo uma barra lateral de navagação, dropdown de configurações onde você pode escolher entre temas claro e escuro e deixar salvo a preferencia no local storage. A Aplicação usa uma API para criação de usuarios, autentificação e criação de templates para simulação da pagina de pesquisa. No back-end usei Node.js com express e typescript, base de dados MySQl para armazenar dados sobre usuarios e templates de videos, uuid para gerar IDs aleatorios para usuários e vídeos, bycript para criptografar as senhas dos usuarios e jsonwebtoken para gerar um token de acesso que mantém o usuario logado por 30 dias"
     },
     {
@@ -41,8 +41,8 @@
         "github-front": "https://github.com/KaduViana1/next_e-commerce"
       },
       "libs": ["html", "js", "sass", "react", "nextjs", "mongodb", "mongoose"],
-      "EN": "A application simulating an e-commerce focused on selling video-game consoles and accessories. You can search for the products, see prodcuts pages for more in depth descriptions, add and remove products from the cart (that persists your products in local storage) and 'finish your order, simulating a purchase.The Application is connected with a MongoDB database where it fetch data for the products and simulate purchases, adding orders details to the database.The application was built with Next.js (using pages router), axios for data fetch and make orders, mongoose to connect with MongoDB and SASS for stylization",
-      "PT": "Uma aplicação que simula um e-commerce focado na venda de consoles e acessorios de video-game. Nela você pode procurar por produtos, acessar a página do produto para ter acesso a mais detalhes sobre o produto, adicionar e remover itens do carrinho (que fica salvo na local storage) e terminar o pedido, simulando uma compra. A aplicação se conecta a uma base de dados MongoDB para pegar dados dos produtos e adicionar informações sobre pedidos. Construida com Next.js, axios para requisições de dados e fazer pedidos, mongoose para conectar com MongoDB e SASS para estilização"
+      "EN": "An e-commerce application focused on selling video-game consoles and accessories. You can search for the products, see prodcuts pages for more in depth descriptions, add and remove products from the cart (that persists your products in local storage) and 'finish your order, simulating a purchase. The Application is connected with a MongoDB database where it fetch data for the products and simulate purchases, adding orders details to the database. The application was built with Next.js (using pages router), axios for data fetch and make orders, mongoose to connect with MongoDB and SASS for stylization",
+      "PT": "Uma aplicação de e-commerce focado na venda de consoles e acessorios de video-game. Nela você pode procurar por produtos, acessar a página do produto para ter acesso a mais detalhes sobre o produto, adicionar e remover itens do carrinho (que fica salvo na local storage) e terminar o pedido, simulando uma compra. A aplicação se conecta a uma base de dados MongoDB para pegar dados dos produtos e adicionar informações sobre pedidos. Construida com Next.js, axios para requisições de dados e fazer pedidos, mongoose para conectar com MongoDB e SASS para estilização"
     },
     {
       "nome": "React Native Pokédex",
@@ -92,7 +92,7 @@
         "nextjs",
         "socketio"
       ],
-      "EN": "Real-tima chat app, layout inspired from WhatsApp web. With group and single chat messages, non-read messages notification and sorting the order of the chats on the side-bar where you can fix the conversarions to stay on top ",
+      "EN": "Real-tima chat app, layout inspired from WhatsApp web. With group and single chat messages, non-read messages notification and sorting the order of the chats on the side-bar where you can fix the conversarions to stay on top",
       "PT": "Aplicativo de chat em tempo real, copiando layout do WhatsApp web com função de mensagens em grupo, mensagens para usuários individuais, notificação de mensagens não lidas, organização da ordem das conversas na barra lateral e opção de fixar conversas no topo"
     }
   ]

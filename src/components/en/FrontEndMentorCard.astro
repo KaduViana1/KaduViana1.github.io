@@ -1,0 +1,75 @@
+---
+type Props = {
+  imageURL: string;
+  gitHubURL: string;
+  classes: string;
+};
+
+const { imageURL, gitHubURL, classes } = Astro.props;
+---
+
+<div
+  class=`${classes} flex flex-col gap-2 bg-black/[0.5] max-w-lg lg:max-w-none m-auto lg:m-0`
+>
+  <img
+    class="w-full h-60 lg:h-72"
+    src={`/project_images/${imageURL}.webp`}
+    alt=""
+  />
+  <div class="flex flex-col p-2 gap-4 grow">
+    <slot />
+    <a
+      href={gitHubURL}
+      target="_blank"
+      class="text-sm underline text-gold self-end mt-auto"
+      >Go to Github repository</a
+    >
+  </div>
+</div>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("card-animation");
+        }
+      });
+    },
+    { threshold: 0.5 },
+  );
+
+  const mentorCards = document.querySelectorAll(".mentor-card");
+
+  mentorCards.forEach((card) => {
+    observer.observe(card);
+  });
+</script>
+
+<style>
+  .card-animation {
+    animation: mentor-card-animation 1s forwards;
+  }
+
+  @media (min-width: 1024px) {
+    .mentor-card.card-2 {
+      animation-delay: 0.2s;
+    }
+
+    .mentor-card.card-3 {
+      animation-delay: 0.4s;
+    }
+  }
+
+  @keyframes mentor-card-animation {
+    0% {
+      opacity: 0;
+      transform: translateY(30%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

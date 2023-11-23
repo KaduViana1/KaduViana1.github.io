@@ -1,0 +1,61 @@
+---
+import Projeto from "./Projeto.astro";
+import JSONprojects from "../../utils/projetos.json";
+import FrontEndMentorCard from "./FrontEndMentorCard.astro";
+
+const { projects } = JSONprojects;
+---
+
+<div class="flex flex-col py-12 items-center gap-16">
+  <h1 class="text-4xl lg:text-5xl z-10">Projects</h1>
+  <div class="container grid grid-cols-1 gap-16 z-10">
+    {projects && projects.map((project) => <Projeto projectInfo={project} />)}
+  </div>
+  <div class="container z-10">
+    <h2 class="text-2xl md:text-4xl mb-10">Projects from Front End Mentor</h2>
+    <p class="text-sm md:text-xl mb-1">
+      Those are some smaller projects from <a
+        class="text-bold underline text-gold"
+        href="https://www.frontendmentor.io/"
+        target="_blank">Frontend Mentor</a
+      >, a website with projects to test and improve the devs skills.
+    </p>
+    <span class="text-sm md:text-xl">
+      They are all responsive, using the mobile first strategy and built only
+      with Javascript HTML and CSS
+    </span>
+    <div
+      class="grid grid-cols-1 auto-rows-[1fr] lg:grid-cols-3 gap-y-10 gap-x-8 xl:gap-x-12 mt-8"
+    >
+      <FrontEndMentorCard
+        gitHubURL="https://github.com/KaduViana1/princing-component-with-toggle"
+        imageURL="pricing-component"
+        classes="mentor-card opacity-0"
+      >
+        <p>A price component with a toggle button to change the plan prices.</p>
+      </FrontEndMentorCard>
+      <FrontEndMentorCard
+        gitHubURL="https://github.com/KaduViana1/News-Homepage-Front-Mentor-"
+        imageURL="news-page"
+        classes="mentor-card card-2 opacity-0"
+      >
+        <p>
+          A News-Page with a simple menu modal. On mobile the header navigation
+          changes to a modal menu.
+        </p>
+      </FrontEndMentorCard>
+
+      <FrontEndMentorCard
+        gitHubURL="https://github.com/KaduViana1/calculator-app"
+        imageURL="calculator"
+        classes="mentor-card card-3 opacity-0"
+      >
+        <p>
+          A Calculator App with three color themes, it uses
+          "prefered-color-scheme" to define the best suited theme for the user
+          based on the device configuration.
+        </p>
+      </FrontEndMentorCard>
+    </div>
+  </div>
+</div>
