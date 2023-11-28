@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 type Props = {
   projectInfo: {
     nome: string;
+    nomeEn: string;
     imagens: string[];
     links: {
       deploy?: string;
@@ -36,7 +37,7 @@ const description = projectInfo.EN.split(". ");
     <div
       class="flex flex-col-reverse md:flex-row justify-between itens-center md:items-center w-full"
     >
-      <h1 class="text-2xl self-center mt-3 lg:mt-0">{projectInfo.nome}</h1>
+      <h1 class="text-2xl self-center mt-3 lg:mt-0">{projectInfo.nomeEn}</h1>
       <div class="flex gap-1">
         {
           projectInfo.libs &&

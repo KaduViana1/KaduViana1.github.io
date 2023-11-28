@@ -1,7 +1,8 @@
 {
   "projects": [
     {
-      "nome": "Batman",
+      "nomeEn": "Batman 2022",
+      "nome": "Batman 2022",
       "imagens": ["/project_images/batman.webp"],
       "links": {
         "deploy": "https://master.dlakzzzyclh14.amplifyapp.com/",
@@ -12,7 +13,8 @@
       "PT": "Uma aplicação React.js que simula um site de divulgação e venda de ingressos para o filme do batman 2022. O site é responsivo para dispositivos menores e tem quatro páginas: A página principal com o trailer do filme, sinopse e cards com imagens dos principais personagens. Página de contato com um simples formulário para contato. Página de fotos com um carrossel de fotos do filme. Página de comentários onde você pode adicionar um comentário, simulando conexão com uma API e base de dados"
     },
     {
-      "nome": "Youtube",
+      "nomeEn": "Youtube Clone",
+      "nome": "Clone Youtube",
       "imagens": ["/project_images/youtube.webp"],
       "links": {
         "deploy": "https://youtube-clone-ten-beta.vercel.app/",
@@ -34,7 +36,8 @@
       "PT": "Um clone da versão para desktops da pagina inicial do youtube, feita com React.js com Typescript, usando styled components e react-router-dom, contendo uma barra lateral de navagação, dropdown de configurações onde você pode escolher entre temas claro e escuro e deixar salvo a preferencia no local storage. A Aplicação usa uma API para criação de usuarios, autentificação e criação de templates para simulação da pagina de pesquisa. No back-end usei Node.js com express e typescript, base de dados MySQl para armazenar dados sobre usuarios e templates de videos, uuid para gerar IDs aleatorios para usuários e vídeos, bycript para criptografar as senhas dos usuarios e jsonwebtoken para gerar um token de acesso que mantém o usuario logado por 30 dias"
     },
     {
-      "nome": "Next E-Commerce",
+      "nomeEn": "Next.js E-Commerce",
+      "nome": "E-Commerce Next.js",
       "imagens": ["/project_images/next-e-commerce.webp"],
       "links": {
         "deploy": "https://next-e-commerce.vercel.app/",
@@ -45,7 +48,8 @@
       "PT": "Uma aplicação de e-commerce focado na venda de consoles e acessorios de video-game. Nela você pode procurar por produtos, acessar a página do produto para ter acesso a mais detalhes sobre o produto, adicionar e remover itens do carrinho (que fica salvo na local storage) e terminar o pedido, simulando uma compra. A aplicação se conecta a uma base de dados MongoDB para pegar dados dos produtos e adicionar informações sobre pedidos. Construida com Next.js, axios para requisições de dados e fazer pedidos, mongoose para conectar com MongoDB e SASS para estilização"
     },
     {
-      "nome": "React Native Pokédex",
+      "nomeEn": "React Native Pokédex",
+      "nome": "Pokédex em React Native",
       "imagens": ["/project_images/pokédex.webp"],
       "links": {
         "github-front": "https://github.com/KaduViana1/react-native-pokedex"
@@ -55,7 +59,8 @@
       "PT": "Um aplicativo mobile feito com React Native com expo, redux tollkit e redux persist. Você pode usar o aplicativo para procurar por pokemons e ver varias informações sobre os pokémons (tiradas do PokéApi), como: evoluções, tipos, formas, ataques e muito mais. Você pode salvar quantos pokémons quiser como favoritos para ter acesso as suas informações com mais facilidade. Você também pode colocar uma imagens de perfil no cabeçalho do aplicativo, pode tanto usar uma foto do armazenamento do aparelho quanto tirar uma foto direto da câmera do aplicativo"
     },
     {
-      "nome": "Nuxt Rick & Morty",
+      "nomeEn": "Nuxt Rick & Morty",
+      "nome": "Rick & Morty com Nuxt.js",
       "imagens": ["/project_images/rick-morty.webp"],
       "links": {
         "github-front": "https://github.com/KaduViana1/nuxt-rick-morty",
@@ -75,7 +80,8 @@
       "PT": "Um aplicativo web completamente responsivo sobre Rick & Morty, feito com Vue.js, Nuxt.Js e Tailwind CSS. Na aplicação você pode buscar por personagens e ver iformações sobre seu status, episódios em que aparece, ultima localização e mais. Ou você pode ver informações sobre episódios como: sinopse, personagens que aparecem, data de lançamento. Você pode também deixar um comentário na página de algum episódio, ou curtir o comentário de outra pessoa. Você precisara estar registrado e logado para fazer e curtir comentários e também para acessar a página de papéis de parede. A aplicação usa base de dados SQLite e Prisma ORM para gerenciar dados de usuario, comentarios e curtidas"
     },
     {
-      "nome": "Real Time Chat",
+      "nomeEn": "Real Time Chat",
+      "nome": "Chat em tempo real",
       "imagens": ["/project_images/chat-app.webp"],
       "links": {
         "github-front": "https://github.com/KaduViana1/whats-app-web",
